@@ -1,0 +1,13 @@
+# Never commit secrets
+.env
+
+# Ghost content (managed by Docker volumes)
+ghost-content/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
