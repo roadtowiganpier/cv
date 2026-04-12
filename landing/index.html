@@ -14,16 +14,6 @@
   <div class="bg-grid"></div>
   <div class="bg-glow"></div>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="/" class="header-logo">Christian Baker</a>
-      <nav>
-        <a href="/about.html">About</a>
-        <a href="/blog" class="nav-blog">Blog →</a>
-      </nav>
-    </div>
-  </header>
-
   <main>
 
     <!-- Hero -->
@@ -33,20 +23,20 @@
         <div class="hero-photo-col">
           <div class="photo-frame">
             <!--<div class="photo-placeholder"><span>CB</span></div> -->
-            <img src="assets/christian-baker.jpg" alt="Christian Baker" /> 
+            <img src="assets/christian-baker.jpg" aslt="Christian Baker" /> 
           </div>
         </div>
 
         <div class="hero-text-col">
           <p class="hero-location">Paris, France</p>
           <h1 class="hero-name">Christian<br/>Baker</h1>
-          <p class="hero-tagline">I think carefully about complex things.<br/>
-            <em>Then I write about them.</em>
+          <p class="hero-tagline">Everyday writings<br/>
+            <em>Thoughts on my personal projects and my passions</em>
           </p>
           <p class="hero-sub">
             IT architect and renewable energy specialist by profession.
-            Reader, cyclist, and gospel choir bass by inclination.
-          </p>
+            Blogging about the energy transition, tech projects, cycling and literary fiction 
+          </p>  
           <div class="hero-links">
             <a href="/about.html" class="btn-primary">About Me</a>
             <a href="/blog" class="btn-outline">Read the Blog</a>
@@ -58,8 +48,16 @@
             </a>
           </div>
         </div>
-
+          
+          <!-- Scroll indicator -->
+          <div class="scroll-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </div>
+          
       </div>
+
     </section>
 
     <!-- Writing section -->
@@ -152,6 +150,14 @@
       </div>
     </div>
   </footer>
+
+<script>
+    document.querySelector('.scroll-arrow').addEventListener('click', () => {
+      document.querySelector('.writing').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+
 
 </body>
 </html>
