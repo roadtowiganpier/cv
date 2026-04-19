@@ -19,4 +19,4 @@ jobs:
           script: |
             cd ~/cv
             git pull origin main
-            cp -r landing/* /var/www/cb-landing/
+            umask 002 && cp -r landing/* /var/www/cb-landing/
